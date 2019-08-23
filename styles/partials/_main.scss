@@ -1,0 +1,85 @@
+// .container { 
+//     display: flex;
+//     .leftBox, 
+//     .rightBox {
+//         width:50%; 
+//     }
+// }
+
+// .rightBox {
+//     font-size: 4.8rem;
+//     font-weight: bold;
+//     line-height: 5rem;
+//     padding-bottom: 2rem; 
+//     text-transform: uppercase;
+//     // display: flex; 
+//     // .answer {
+//     //     align-items: center; 
+//     //     justify-content: center; 
+//     // }
+// }
+
+// BUTTON STYLES
+
+.submitButton, 
+.resetButton {
+    
+    font-size: 2rem;
+    line-height: 2.4rem;
+    letter-spacing: .4rem; 
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center; 
+    background-color: $accent;
+    border: 2px solid $accent; 
+    color: white;
+    padding: 2rem 2rem; 
+    margin: 1rem 0; 
+    width: 30rem; 
+    display: block; 
+    &:hover, 
+    &:focus {
+        background: greenyellow;
+        border: 2px solid greenyellow;
+        color: white; 
+    }
+}
+
+.resetButton {
+    background-color: white;
+    color: $accent;
+    &:hover, 
+    &:focus {
+        background-color: white; 
+        border: 2px solid red;
+        color: red; 
+    }
+}
+
+.option {
+    margin: 5rem 0; 
+    display: flex;
+    flex-direction: row-reverse;
+    .labelBox {
+        width: 90%; 
+    } 
+    .inputBox {
+        width: 10%;
+    }
+}
+
+input:selected {
+    fill: green;
+}
+
+// ANSWER SECTION
+
+.answer {
+    text-align: center; 
+    text-transform: uppercase;
+    font-size: 5rem; 
+    font-weight: bold; 
+    color: greenyellow;
+    // width: 100%; 
+    padding:  10rem 0; 
+}

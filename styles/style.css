@@ -220,3 +220,173 @@ textarea {
   clip: rect(0 0 0);
   overflow: hidden;
 }
+
+html {
+  font-size: 10px;
+}
+
+.wrapper,
+.navWrapper {
+  padding: 5rem 10rem;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.navWrapper {
+  padding: 0 10rem;
+}
+
+body {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: #202020;
+  background: white;
+  font-family: "Nunito", sans-serif;
+}
+
+h1,
+h2 {
+  font-size: 4.8rem;
+  letter-spacing: .1rem;
+  line-height: 5rem;
+  color: white;
+  font-weight: bold;
+  padding-bottom: 2rem;
+}
+
+h2 {
+  color: #202020;
+  font-size: 3rem;
+  line-height: 4rem;
+}
+
+header {
+  background-color: #202020;
+}
+
+header nav {
+  background: white;
+}
+
+header .logo {
+  font-family: "Playball", cursive;
+  color: #202020;
+  font-size: 4rem;
+  padding: 5rem 0;
+}
+
+header p {
+  color: #D5D5D5;
+}
+
+.submitButton,
+.resetButton {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  letter-spacing: .4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #C5B2A2;
+  border: 2px solid #C5B2A2;
+  color: white;
+  padding: 2rem 2rem;
+  margin: 1rem 0;
+  width: 30rem;
+  display: block;
+}
+
+.submitButton:hover, .submitButton:focus,
+.resetButton:hover,
+.resetButton:focus {
+  background: greenyellow;
+  border: 2px solid greenyellow;
+  color: white;
+}
+
+.resetButton {
+  background-color: white;
+  color: #C5B2A2;
+}
+
+.resetButton:hover, .resetButton:focus {
+  background-color: white;
+  border: 2px solid red;
+  color: red;
+}
+
+.option {
+  margin: 5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.option .labelBox {
+  width: 90%;
+}
+
+.option .inputBox {
+  width: 10%;
+}
+
+input:selected {
+  fill: green;
+}
+
+.answer {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 5rem;
+  font-weight: bold;
+  color: greenyellow;
+  padding: 10rem 0;
+}
+
+footer {
+  background-color: #202020;
+  text-align: center;
+  color: #7A7A7A;
+  font-size: 1.5rem;
+  line-height: 1.6rem;
+}
+
+.socialIcons {
+  width: 50px;
+  height: 50px;
+  color: #999999;
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper,
+  .navWrapper {
+    padding: 2rem 3rem;
+  }
+  .navWrapper {
+    padding: 0 3rem;
+  }
+  body {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+  h1,
+  h2 {
+    font-size: 4rem;
+    line-height: 4.5rem;
+    color: white;
+    font-weight: bold;
+  }
+  h2 {
+    color: #202020;
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  .submitButton,
+  .resetButton {
+    width: 100%;
+  }
+}

@@ -3,39 +3,82 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Social Media Personality Quiz</title>
-	<!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito|Playball&display=swap" rel="stylesheet">
 </head>
 <body>
-	<main>
+	<se>
 		<header>
-            <h1>Social Media Matchmaker</h1>
-            <p>Which social media platform best matches your personality?</p>
+            <nav class="navWrapper">
+                <div class="logoWrapper">
+                    <p class="logo">Kristen Zemlak</p>
+                </div><!-- .logoWrapper -->
+            </nav><!-- .navWrapper -->
+            <div class="wrapper">
+                <h1>Social Media Matchmaker.</h1>
+                <p>Which social media platform best matches your personality?</p>
+            </div><!-- .wrapper -->
 		</header>
-		<form action="">
-
-			<fieldset class="questionOne">
-                <p>What's your favourite thing to do online?</p>
-
-                <label for="facebook">Looking at baby pics.</label>
-                <input type="radio" name="time" id="facebook" value="facebook">
-                <label for="twitter">Talking about work & what's for lunch.</label>
-                <input type="radio" name="time" id="twitter" value="twitter">
-                <label for="linkedin">Keeping in touch with past colleagues.</label>
-                <input type="radio" name="time" id="linkedin" value="linkedin">
-                <label for="youtube">Watching how-to videos.</label>
-                <input type="radio" name="time" id="youtube" value="youtube">
-
-                <input type="submitButton" class="submitButton" value="Submit Now!">
+		<section>
+            <div class="wrapper">
+                <form action="#">
+                    <fieldset class="question1">
+                        <h2>Would you rather:</h2>
+    
+                                <div class="option">
+                                    <div class="labelBox">
+                                        <label for="facebook" class="optionLabel">Check in with that distant aunt-in-law that you love but haven't talked to for ages.</label>
+                                    </div>
+                                    <div class="inputBox">
+                                        <input type="radio" name="time" id="facebook" value="facebook">
+                                    </div>
+                                </div>
+                    
+                                <div class="option">
+                                    <div class="labelBox">
+                                        <label for="twitter" class="optionLabel">Stay up to date on world/industry news, read commentary and share contextually relevant witty one-liners.</label>
+                                    </div>
+                                    <div class="inputBox">
+                                        <input type="radio" name="time" id="twitter" value="twitter">
+                                    </div>
+                                </div>
                 
-            </fieldset>
-            
-		</form>
-		<section class="answer">
-		</section>
-	</main>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js">
-    </script>
+                                <div class="option">
+                                    <div class="labelBox">
+                                        <label for="linkedin">Grow and nurture your professional network by keeping in touch with past colleagues and what's on their minds.</label>
+                                    </div>
+                                    <div class="inputBox">
+                                        <input type="radio" name="time" id="linkedin" value="linkedin">
+                                    </div>
+                                </div>
+                            
+                                <div class="option">
+                                    <div class="labelBox">
+                                        <label for="youtube">Watch how-to videos on topics ranging from perfect eyebrows to regular expressions.</label>
+                                    </div>
+                                    <div class="inputBox">
+                                        <input type="radio" name="time" id="youtube" value="youtube">
+                                    </div>
+                                </div>
+                            
+                                <input type="submit" class="submitButton" value="Submit">
+                                <input type="reset" class="resetButton" value="Reset">
+                        
+                    </fieldset><!--question1 -->
+                </form>
+                <section class="answer wrapper">
+                </section><!-- / .answer -->
+            </div><!-- / .wrapper -->
 
-	<script src="script.js"></script>
+    </main>
+    <footer>
+        <div class="wrapper">
+            <p>Kristen Zemlak | August 26, 2019</p>
+        </div><!-- wrapper -->
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="script.js"></script>
+    
 </body>
 </html>

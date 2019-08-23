@@ -1,0 +1,16 @@
+header {
+    background-color: $primary;
+    
+    nav {
+        background: white;
+    }
+    .logo {
+        font-family: $specialFont; 
+        color: $primary;
+        font-size: 4rem; 
+        padding: 5rem 0; 
+    }
+    p {
+        color: #D5D5D5;
+    }
+}

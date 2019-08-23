@@ -22,11 +22,8 @@ $(document).ready(function(){
 
 
 // TO DO: 
-    // How to commit to Github
-    // How to clear radio selection when page refreshes
+    // Weird behavior when submitting - sometimes doesn't work?
     // Change style of selected radio button
-    // Why can users only select one option???? Happy coincidince
-    // Is it OK that I didn't do a list? When would I do a list??
 
 // STRETCH GOALS: 
     // Add a second field set
