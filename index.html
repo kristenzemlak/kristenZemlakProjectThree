@@ -5,76 +5,72 @@
 	<title>Social Media Personality Quiz</title>
     <link rel="stylesheet" href="./styles/style.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito|Playball&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ddfa5da3a1.js"></script>
 </head>
 <body>
-	<se>
-		<header>
-            <nav class="navWrapper">
-                <div class="logoWrapper">
-                    <p class="logo">Kristen Zemlak</p>
-                </div><!-- .logoWrapper -->
-            </nav><!-- .navWrapper -->
-            <div class="wrapper">
-                <h1>Social Media Matchmaker.</h1>
-                <p>Which social media platform best matches your personality?</p>
-            </div><!-- .wrapper -->
-		</header>
-		<section>
-            <div class="wrapper">
-                <form action="#">
-                    <fieldset class="question1">
-                        <h2>Would you rather:</h2>
-    
-                                <div class="option">
-                                    <div class="labelBox">
-                                        <label for="facebook" class="optionLabel">Check in with that distant aunt-in-law that you love but haven't talked to for ages.</label>
-                                    </div>
-                                    <div class="inputBox">
-                                        <input type="radio" name="time" id="facebook" value="facebook">
-                                    </div>
-                                </div>
-                    
-                                <div class="option">
-                                    <div class="labelBox">
-                                        <label for="twitter" class="optionLabel">Stay up to date on world/industry news, read commentary and share contextually relevant witty one-liners.</label>
-                                    </div>
-                                    <div class="inputBox">
-                                        <input type="radio" name="time" id="twitter" value="twitter">
-                                    </div>
-                                </div>
-                
-                                <div class="option">
-                                    <div class="labelBox">
-                                        <label for="linkedin">Grow and nurture your professional network by keeping in touch with past colleagues and what's on their minds.</label>
-                                    </div>
-                                    <div class="inputBox">
-                                        <input type="radio" name="time" id="linkedin" value="linkedin">
-                                    </div>
-                                </div>
-                            
-                                <div class="option">
-                                    <div class="labelBox">
-                                        <label for="youtube">Watch how-to videos on topics ranging from perfect eyebrows to regular expressions.</label>
-                                    </div>
-                                    <div class="inputBox">
-                                        <input type="radio" name="time" id="youtube" value="youtube">
-                                    </div>
-                                </div>
-                            
-                                <input type="submit" class="submitButton" value="Submit">
-                                <input type="reset" class="resetButton" value="Reset">
-                        
-                    </fieldset><!--question1 -->
-                </form>
-                <section class="answer wrapper">
-                </section><!-- / .answer -->
-            </div><!-- / .wrapper -->
+    <nav class="wrapper">
+        <p class="logo">KristenZemlak.com</p>
+    </nav>
+    <header>
+        <div class="wrapper">
+            <h1>Social Media Matchmaker</h1>
+            <h2>Personality quiz</h2>
+        </div><!-- /.wrapper-->
+    </header>
 
+    <main>
+        <section class="wrapper">
+            <h2>Ever wonder which social media platform is best for your personality and style? Take this simple quiz to reveal your perfect match!</h2>
+        </section>
+        <div class="wrapper mainContainer"">
+            <form action="#" class="questionContainer">
+
+                <fieldset class="question1">
+                        <h2>When online, would you rather...</h2>
+
+                        <ul>
+                            <li>
+                                <input type="radio" name="time" id="facebook" value="facebook">
+                                <label for="facebook" class="radioLabel">Check in with family</label>
+                            </li>
+                        
+                            <li>
+                                <input type="radio" name="time" id="twitter" value="twitter">
+                                <label for="twitter" class="radioLabel">Keep up with world news</label>
+                            </li>
+                        
+                            <li>
+                                <input type="radio" name="time" id="linkedin" value="linkedin">
+                                <label for="linkedin" class="radioLabel">Nurture your network</label>
+                            </li>
+                        
+                            <li>
+                                <input type="radio" name="time" id="youtube" value="youtube">
+                                <label for="youtube" class="radioLabel">Watch how-to videos</label>
+                            </li>
+                        </ul>
+                            
+                        <input type="submit" class="submitButton" value="Submit">
+
+                        <input type="reset" class="resetButton" value="Reset">
+                    </fieldset><!--question1 -->
+
+            </form><!-- / .questionContainer -->
+
+            <section class="answerContainer">
+                    <div class="answer">
+                        <i class="fab fa-facebook-square"></i></<i>
+                        <i class="fab fa-linkedin"></i></<i>
+                        <i class="fab fa-twitter-square"></i></<i>
+                        <i class="fab fa-youtube-square"></i></<i>
+                    </div><!-- / .answer --> 
+            </section><!-- / .answerContainer -->
+        </div><!-- /.wrapper .mainContainer -->
     </main>
     <footer>
         <div class="wrapper">
             <p>Kristen Zemlak | August 26, 2019</p>
-        </div><!-- wrapper -->
+        </div><!-- /.wrapper -->
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

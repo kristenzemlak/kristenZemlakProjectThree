@@ -1,13 +1,8 @@
-// COLORS
+// MIXINS
 
-$primary: #202020; // rgb(32, 32, 32) dark grey aka nero
-$secondary: #CACACA; // rgb(202,202,202) very light gray
-$accent: #C5B2A2; // rgb(197,178,162) grain brown
-$icon: #999999; // rgb(153, 153, 153) dusty gray
-$copyright: #7A7A7A; // rgb(122, 122, 122) boulder gray
-$subtitle: #D5D5D5; // hopbush gray
-
-// FONTS
+$primary: #202020;
+$secondary: #CACACA;
+$accent: #AB9079; 
 $baseFont: 'Nunito', sans-serif;
 $specialFont: 'Playball', cursive;
 
@@ -17,38 +12,152 @@ html {
     font-size: 10px;
 }
 
-.wrapper, 
-.navWrapper {
-    padding: 5rem 10rem; 
+.wrapper {
+    padding: 5rem; 
     max-width: 1170px;
     margin: 0 auto;
 }
 
-.navWrapper {
-    padding: 0 10rem; 
-}
-
 body {
-    font-size: 2rem; 
-    line-height: 2.4rem; 
+    font-family: $baseFont;
+    font-size: 2rem;
     color: $primary; 
     background: white;
-    font-family: $baseFont;
-    // width: 100%; 
+    
 }
 
-h1, 
+img {
+    width: 100%; 
+    margin: 0 auto; 
+}
+
+.logo {
+    font-family: $specialFont;
+    font-size: 4rem; 
+}
+
+// HEADER STYLES
+
+header {
+    background-color: black;
+    background-image: url("/images/introBackground.jpg");
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: 70% 100%; 
+    padding: 5rem; 
+    h1 {
+        font-family: $specialFont;
+        font-size: 8rem;
+        color: white;  
+        max-width: 60%; 
+    }
+}
+
+// MAIN STYLES 
+
 h2 {
-    font-size: 4.8rem;
-    letter-spacing: .1rem;
-    line-height: 5rem; 
-    color: white; 
+    font-size: 4rem;
+    color: $accent; 
+}
+
+.mainContainer { 
+    display: flex;
+    justify-content: space-between;
+    .questionContainer,  
+    .answerContainer {
+        width: 48%; 
+        padding: 5rem; 
+        border: 2px solid $accent; 
+    }
+}
+
+.answerContainer { 
+    background-color: $accent;
+    color: white;  
+    text-transform: uppercase;
+    font-size: 7rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+// FORM STYLES 
+
+li {
+    border-bottom: 1px solid $secondary;
+    display: block; 
+    margin: 0.5rem;
+    padding: 2rem 0;
+    &:hover, 
+    &:focus {
+        color: $accent;
+    }
+}
+
+input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+
+input[type="radio"]:checked {
+    background: greenyellow;
+}
+
+.radioLabel:before {
+    content: '';
+    border-radius: 100%;
+    border: 4px solid $primary;
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    position: relative;
+    top: -0.2rem;
+    margin-right: 3rem; 
+    vertical-align: top;
+}
+
+// SUBMIT & RESET BUTTON STYLES
+
+.submitButton, 
+.resetButton {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    letter-spacing: .4rem; 
     font-weight: bold;
-    padding-bottom: 2rem; 
+    text-transform: uppercase;
+    text-align: center; 
+    background-color: $accent;
+    border: 2px solid $accent; 
+    color: white;
+    padding: 2rem 2rem; 
+    margin: 1rem 0; 
+    width: 100%; 
+    display: block; 
+    &:hover, 
+    &:focus {
+        background: greenyellow;
+        border: 2px solid greenyellow;
+        color: white; 
+    }
 }
 
-h2 {
-    color: $primary; 
-    font-size: 3rem;
-    line-height: 4rem;
+.resetButton {
+    background-color: white;
+    color: $accent;
+    &:hover, 
+    &:focus {
+        background-color: white; 
+        border: 2px solid red;
+        color: red; 
+    }
+}
+
+//FOOTER STYLES
+
+footer {
+    background-color: $primary;
+    color: $secondary; 
+    text-align: center; 
+    font-size: 1.5rem; 
+    line-height: 1.6rem; 
 }
